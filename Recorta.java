@@ -215,10 +215,7 @@ public class Recorta{
         image = new BufferedImage(cm,raster,cm.isAlphaPremultiplied(),null);
         cm=null;
         Accesser.saveImage("Recortados/"+sourceFile.getPath(),image,imageFile.getName());
-<<<<<<< HEAD
         Accesser.saveImage("Escalados/"+sourceFile.getPath(),Accesser.scaleImage(image,908,908),imageFile.getName());
-=======
->>>>>>> c192e8984f7c03fd62c1e2fb492e3b3e550a0454
         imageFile.delete();
         imageFile = null;
         raster = null;
@@ -228,20 +225,5 @@ public class Recorta{
         frame.setVisible(true);*/
         image = null;
         run();
-	}
-<<<<<<< HEAD
+        }
 }
-=======
-}
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> c192e8984f7c03fd62c1e2fb492e3b3e550a0454
