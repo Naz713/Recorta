@@ -35,7 +35,11 @@ public class Accesser{
     	if (img instanceof BufferedImage){
     	    return (BufferedImage) img;
     	}// Create a buffered image with transparency
+<<<<<<< HEAD
     	BufferedImage bimage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_RGB);
+=======
+    	BufferedImage bimage = new BufferedImage(img.getWidth(null), img.getHeight(null), BufferedImage.TYPE_INT_ARGB);
+>>>>>>> c192e8984f7c03fd62c1e2fb492e3b3e550a0454
     	// Draw the image on to the buffered image
     	Graphics2D bGr = bimage.createGraphics();
     	bGr.drawImage(img, 0, 0, null);
